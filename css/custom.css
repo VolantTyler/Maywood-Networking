@@ -1,0 +1,133 @@
+
+/* body {
+    padding-top: 3.5rem;
+  } */
+
+.card-block{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* .navbar-dark .navbar-brand:focus, .navbar-dark .navbar-brand:hover {
+  color: #18BC9C; 
+  border-bottom: 2px solid #18BC9C;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+  color: #18BC9C; 
+  border-bottom: 2px solid #18BC9C;
+} */
+
+.cardtop{
+  font-family: 'Roboto Slab', serif;
+  color: #25a2b6 !important;
+  padding-bottom: 8px;
+  /* padding-top: 8px; */
+  border-bottom: 4px solid #3d2910;
+      text-align: center;
+  }
+
+  .card{
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #fff;
+    margin-bottom: 30px;    
+}
+
+.card-footer{
+  padding: 0.75rem 1.25rem;
+}
+
+/* Attempting to standardize height of each row of cards */
+/* .row.equal-height {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row.equal-height > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+.card {
+  flex: 1;
+} */
+.img-fluid {
+  width: 100%;
+}
+.flex-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: auto;
+  min-height: 1px;
+}
+.image-container {
+  margin-top: 5px;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  -ms-flex-negative: 0;
+}
+
+.portrait {
+  margin-bottom: 1rem;
+}
+
+.jumbotron{
+  background: url("../images/letip-networking-hh.png") center center;  
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top: 4px solid #25a2b6;
+  border-radius: 0rem;
+  /* display: flex; */
+}
+
+/* @media (max-width: 767px) {
+  .jumbotron {
+    height: 3rem;
+  }
+  .jumbotron .container h1 {
+    font-size: 2rem;
+  }
+  .jumbotron .container h3 {
+    font-size: 16px;
+  }
+  .jumbotron .container .btn-lg {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+} */
+
+
+h1{
+  color: #25a2b6;
+  text-shadow: 2px 2px 4px black;
+}
+
+h3, h4{
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+}
+
+.btn{
+  margin-bottom: .5rem;
+}
+
+.btn-info{
+  /* hsl(194, 100%, 100%);
+  hsl(208, 100%, 100%); */
+  
+  /* text-shadow: 0 1px 2px rgba(0, 0, 0, 0.18);
+  line-height: 1.5;
+  padding: .5em 2em;
+  border: none;
+  background-image: linear-gradient(-180deg, #80d1f3 0%, #4a90e2 100%) */
+}
