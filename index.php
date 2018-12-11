@@ -82,6 +82,74 @@
 <hr>
       
 
+    <!-- Row 0 -->
+      <div class="row row_white">
+        <div class="container">
+          <div class="card-deck">
+
+            <div class="card">
+              <?php
+              $xml=simplexml_load_file("members/1.xml") or die ("Error: Cannot read or locate article data");
+              ?>
+              <div class="card-body">
+                <h2 class="cardtop"><?php echo $xml->name; ?></h2>
+                <!-- <img src="images/howard.png" class="img-fluid" alt="Pascack Data Services logo" style="padding-top: 3rem; padding-bottom: 3rem;"> -->
+                <h3><?php echo $xml->title; ?></h3>
+                <h4><?php echo $xml->business; ?></h4>
+                <p><?php echo $xml->summary; ?></p>
+              </div>
+              <!-- Footer buttons -->
+              <div align="center" class="card-footer">
+              <a href="<?php echo $xml->website; ?>" target="_blank"><button type="button" class="btn  btn-outline-primary" >Website</button></a>
+              <a href="<?php echo $xml->email; ?> "><button type="button" class="btn  btn-outline-primary" >Contact </button></a> 
+              </div>
+            </div>
+  
+            <div class="card">
+              <?php
+                $xml=simplexml_load_file("members/2.xml") or die ("Error: Cannot read or locate article data");
+                ?>
+              <div class="card-body">
+              <h2 class="cardtop"><?php echo $xml->name; ?></h2>
+                <!-- <img src="images/howard.png" class="img-fluid" alt="Pascack Data Services logo" style="padding-top: 3rem; padding-bottom: 3rem;"> -->
+                <h3><?php echo $xml->title; ?></h3>
+                <h4><?php echo $xml->business; ?></h4>
+                <p><?php echo $xml->summary; ?></p>
+
+              </div>
+            <!-- Footer buttons -->
+              <div align="center" class="card-footer">
+              <a href="<?php echo $xml->website; ?>" target="_blank"><button type="button" class="btn  btn-outline-primary" >Website</button></a>
+              <a href="<?php echo $xml->email; ?> "><button type="button" class="btn  btn-outline-primary" >Contact </button></a> 
+              </div>
+            </div>
+  
+  
+            <div class="card">
+            <?php
+                $xml=simplexml_load_file("members/3.xml") or die ("Error: Cannot read or locate article data");
+                ?>
+              <div class="card-body">
+              <h2 class="cardtop"><?php echo $xml->name; ?></h2>
+                <!-- <img src="images/howard.png" class="img-fluid" alt="Pascack Data Services logo" style="padding-top: 3rem; padding-bottom: 3rem;"> -->
+                <h3><?php echo $xml->title; ?></h3>
+                <h4><?php echo $xml->business; ?></h4>
+
+                <p><?php echo $xml->summary; ?></p>
+
+              </div>
+  
+              <!-- Footer buttons -->
+              <div align="center" class="card-footer">
+              <a href="<?php echo $xml->website; ?>" target="_blank"><button type="button" class="btn  btn-outline-primary" >Website</button></a>
+              <a href="<?php echo $xml->email; ?> "><button type="button" class="btn  btn-outline-primary" >Contact </button></a> 
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
 <!-- Row 1 -->
     <section>
           <div class="card-deck">
