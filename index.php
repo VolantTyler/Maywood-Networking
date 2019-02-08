@@ -64,14 +64,14 @@
           <p>LeTip of Maywood has several open seats currently. Contact our organizers, <a href="mailto:mrichards@fairwaymc.com" title="email Mark Richards">Mark</a> and <a href="mailto:amorrison@tocr.com" title="email Amy Morrison">Amy</a>, if you are interested in joining us, and if you do <strong>not</strong> represent one of our currently represented businesses.</p>
 
           <!-- Represented modal button -->
-<button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#representedModal">
-  Businesses currently represented
-</button>
+          <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#representedModal">
+            Businesses currently represented
+          </button>
 
-<!-- Recruiting Button trigger modal -->
-<button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#recruitingModal">
-  Businesses we are seeking
-</button>
+          <!-- Recruiting Button trigger modal -->
+          <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#recruitingModal">
+            Businesses we are seeking
+          </button>
 
 
         </div>
@@ -282,15 +282,62 @@
           <div class="card-deck">
 
   
-  <!-- placeholder -->
-            <!-- <div class="card"> 
-            </div> -->
+  <!-- Sandra Currais -->
+            <div class="card">
+              <?php
+              $xml=simplexml_load_file("members/10.xml") or die ("Error: Cannot read or locate article data");
+              ?>
+              <div class="card-body">
+                <h2 class="cardtop"><?php echo $xml->name; ?></h2>
+                <img src=<?php echo $xml->image; ?> class="rounded-circle portrait img-fluid" alt="Pascack Data Services logo" >
+                <h3><?php echo $xml->title; ?></h3>
+                <h4><?php echo $xml->business; ?></h4>
+                <p><?php echo $xml->summary; ?></p>
+              </div>
+              <!-- Footer buttons -->
+              <div align="center" class="card-footer">
+              <a href="<?php echo $xml->website; ?>" target="_blank"><button type="button" class="btn  btn-outline-primary" >Website</button></a>
+              <a href="<?php echo $xml->email; ?> "><button type="button" class="btn  btn-outline-primary" >Contact </button></a> 
+              </div>
+            </div>
   
-    <!-- placeholder -->
+    <!-- Thomas Messina -->
+            <div class="card">
+              <?php
+              $xml=simplexml_load_file("members/11.xml") or die ("Error: Cannot read or locate article data");
+              ?>
+              <div class="card-body">
+                <h2 class="cardtop"><?php echo $xml->name; ?></h2>
+                <img src=<?php echo $xml->image; ?> class="rounded-circle portrait img-fluid" alt="Pascack Data Services logo" >
+                <h3><?php echo $xml->title; ?></h3>
+                <h4><?php echo $xml->business; ?></h4>
+                <p><?php echo $xml->summary; ?></p>
+              </div>
+              <!-- Footer buttons -->
+              <div align="center" class="card-footer">
+              <a href="<?php echo $xml->website; ?>" target="_blank"><button type="button" class="btn  btn-outline-primary" >Website</button></a>
+              <a href="<?php echo $xml->email; ?> "><button type="button" class="btn  btn-outline-primary" >Contact </button></a> 
+              </div>
+            </div>
 
-            <!-- <div class="card">             
-            </div> -->
-  
+    <!-- placeholder -->
+            <div class="card">
+              <?php
+              $xml=simplexml_load_file("members/12.xml") or die ("");
+              ?>
+              <div class="card-body">
+                <h2 class="cardtop"><?php echo $xml->name; ?></h2>
+                <img src=<?php echo $xml->image; ?> class="rounded-circle portrait img-fluid" alt="Pascack Data Services logo" >
+                <h3><?php echo $xml->title; ?></h3>
+                <h4><?php echo $xml->business; ?></h4>
+                <p><?php echo $xml->summary; ?></p>
+              </div>
+              <!-- Footer buttons -->
+              <div align="center" class="card-footer">
+              <a href="<?php echo $xml->website; ?>" target="_blank"><button type="button" class="btn  btn-outline-primary" >Website</button></a>
+              <a href="<?php echo $xml->email; ?> "><button type="button" class="btn  btn-outline-primary" >Contact </button></a> 
+              </div>
+            </div>
 
           </div>
         </div>
