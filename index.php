@@ -342,12 +342,10 @@
           </div>
         </div>
       </div>
-
+      
     </section>
 
-      <hr>
-      <?php include("footer.php"); ?>
-
+      <?php include "footer.php"; ?>
 
     </div> <!-- /container -->
 
