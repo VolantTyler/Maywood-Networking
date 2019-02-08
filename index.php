@@ -93,7 +93,7 @@
               ?>
               <div class="card-body">
                 <h2 class="cardtop"><?php echo $xml->name; ?></h2>
-                <!-- <img src="images/howard.png" class="img-fluid" alt="Pascack Data Services logo" style="padding-top: 3rem; padding-bottom: 3rem;"> -->
+                <img src=<?php echo $xml->image; ?> class="rounded-circle portrait img-fluid" alt="Pascack Data Services logo" >
                 <h3><?php echo $xml->title; ?></h3>
                 <h4><?php echo $xml->business; ?></h4>
                 <p><?php echo $xml->summary; ?></p>
