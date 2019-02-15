@@ -41,8 +41,8 @@
 
     <div class="container">
 
-    <!-- Networking Event 10/18/18 -->
-      <!-- <div class="row">
+    <!-- Networking Event -->
+      <div class="row">
         <div class="col-md-3">
         </div>
         <div class="col-md-6" align="center">
@@ -50,12 +50,12 @@
           <br>
           <h2 class="cardtop">Happy Hour + Networking</h2>
           <br>
-          <p>October 18, 5:30-7:30PM <br> <a href="http://www.twindoortavern.com/" target="_blank">Twin Door Tavern</a> <br> Open Networking, Live Music, Free Appetizers</p>
+          <p>March 12, 5:30-7:30PM <br> <a href="http://www.twindoortavern.com/" target="_blank">Twin Door Tavern</a> <br> Open Networking, Free Appetizers</p>
         </div>
         <div class="col-md-3">
         </div>
       </div>
-      <hr> -->
+      <hr>
 
       <!-- Intro Summary -->
       <div class="row">
@@ -342,7 +342,7 @@
           </div>
         </div>
       </div>
-      
+
     </section>
 
       <?php include "footer.php"; ?>
