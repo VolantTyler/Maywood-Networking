@@ -168,19 +168,20 @@
             </div>
   
             <div class="card">
+            <?php
+              $xml=simplexml_load_file("members/12.xml") or die ("");
+              ?>
               <div class="card-body">
-              <h2 class="cardtop">Ed Muñoz</h2>
-              <img src="images/ed2.jpg" class="rounded-circle portrait img-fluid" alt="">
-                <h3>Financial Advisor</h3>
-                <h4>Ronald Gelok and Associates</h4>
-              <p>
-              Ed provides financial planning services to clients of all ages, specializing in those age 45-55. Gelok and Associates prides itself on providing a very hands-on and dynamic service, rather than the "set it and forget it" approach found all too often today. Ed brings a robust portfolio with active management, to make his small to medium clients feel like his biggest clients.
-              </p>
+                <h2 class="cardtop"><?php echo $xml->name; ?></h2>
+                <img src=<?php echo $xml->image; ?> class="rounded-circle portrait img-fluid" alt="Pascack Data Services logo" >
+                <h3><?php echo $xml->title; ?></h3>
+                <h4><?php echo $xml->business; ?></h4>
+                <p><?php echo $xml->summary; ?></p>
               </div>
-            <!-- Footer buttons -->
+              <!-- Footer buttons -->
               <div align="center" class="card-footer">
-              <button type="button" class="btn  btn-outline-primary" >Website</button>
-                <button type="button" class="btn  btn-outline-primary" >Contact Ed</button>
+              <a href="<?php echo $xml->website; ?>" target="_blank"><button type="button" class="btn  btn-outline-primary" >Website</button></a>
+              <a href="<?php echo $xml->email; ?> "><button type="button" class="btn  btn-outline-primary" >Contact </button></a> 
               </div>
             </div>
   
@@ -323,7 +324,7 @@
     <!-- placeholder -->
             <div class="card">
               <?php
-              $xml=simplexml_load_file("members/12.xml") or die ("");
+              $xml=simplexml_load_file("members/XXX.xml") or die ("");
               ?>
               <div class="card-body">
                 <h2 class="cardtop"><?php echo $xml->name; ?></h2>
