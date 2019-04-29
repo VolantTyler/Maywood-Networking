@@ -42,7 +42,7 @@
     <div class="container">
 
     <!-- Networking Event -->
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-md-3">
         </div>
         <div class="col-md-6" align="center">
@@ -55,7 +55,7 @@
         <div class="col-md-3">
         </div>
       </div>
-      <hr>
+      <hr> -->
 
       <!-- Intro Summary -->
       <div class="row">
@@ -84,6 +84,8 @@
 
 <!-- Row 1 -->
     <section>
+    <div class="row row_white">
+        <div class="container">
           <div class="card-deck">
             <div class="card">
                 <div class="card-body">
@@ -124,27 +126,28 @@
               <a href="mailto:mrichards@fairwaymc.com "><button type="button" class="btn  btn-outline-primary" >Contact Mark</button></a>  
               </div>
             </div>
-  
-            <div class="card">
+
+   <!-- Thomas Messina -->
+          <div class="card">
+              <?php
+              $xml=simplexml_load_file("members/11.xml") or die ("Error: Cannot read or locate article data");
+              ?>
               <div class="card-body">
-                <h2 class="cardtop">Tyler Stahl</h2>
-                <div class="flex-header">
-                <div class="image-container">
-                  <img src="images/tyler_square.jpg" class="rounded-circle portrait img-fluid" alt="Tyler Stahl">
-                </div>
-                </div>
-                <h3>Web Developer</h3>
-                <h4>Volant Web Design</h4>
-                <p>
-                Volant Web Design helps brands take flight. Tyler partners with clients to design and build websites, and then uses social and analytics tools to reach new audiences. A website can be so much more than a passive page. Tyler builds sites that are active tools, at the center of and enhancing your other marketing efforts. He offers personal, local, attentive service to customers of all levels of technical familiarity.</p>
+                <h2 class="cardtop"><?php echo $xml->name; ?></h2>
+                <img src=<?php echo $xml->image; ?> class="rounded-circle portrait img-fluid" alt="Pascack Data Services logo" >
+                <h3><?php echo $xml->title; ?></h3>
+                <h4><?php echo $xml->business; ?></h4>
+                <p><?php echo $xml->summary; ?></p>
               </div>
               <!-- Footer buttons -->
-              <div align="center" align="center" class="card-footer">
-              <a href="http://www.volantweb.com" target="_blank"><button type="button" class="btn  btn-outline-primary" >Website</button></a>
-              <a href="mailto:tyler@volantweb.com "><button type="button" class="btn  btn-outline-primary" >Contact Tyler</button></a> 
+              <div align="center" class="card-footer">
+              <a href="<?php echo $xml->website; ?>" target="_blank"><button type="button" class="btn  btn-outline-primary" >Website</button></a>
+              <a href="<?php echo $xml->email; ?> "><button type="button" class="btn  btn-outline-primary" >Contact </button></a> 
               </div>
             </div>
           </div>
+        </div>
+      </div>
 
       <!-- Row 2 -->
       <div class="row row_white">
@@ -167,6 +170,7 @@
               </div>
             </div>
   
+  <!-- Edu Munoz -->
             <div class="card">
             <?php
               $xml=simplexml_load_file("members/12.xml") or die ("");
@@ -235,23 +239,26 @@
                 </div>
             </div>
   
-            <div class="card">
+   <!-- Sandra Currais -->
+          <div class="card">
+              <?php
+              $xml=simplexml_load_file("members/10.xml") or die ("Error: Cannot read or locate article data");
+              ?>
               <div class="card-body">
-                  <h2 class="cardtop">Ara Khorozian</h2>
-                  <div align="center">
-                  <img src="images/missing.jpg?id=<?php echo $thekeys; ?>"  class="rounded-circle portrait img-fluid" alt="" title="" >
-                  </div>
-                  <h3>Attorney at Law</h3>
-                  <p>
-                  Ara specializes in real estate law, working with clients out of his Oradell, NJ office. </p>
-                </div>
-    
-                <!-- Footer buttons -->
-                <div align="center" class="card-footer">
-                <!-- <button type="button" class="btn  btn-outline-primary" >Website</button> -->
-                <a href="mailto:ara@arakhorozian.com"><button type="button" class="btn  btn-outline-primary">Contact Ara</button></a>
-                </div>
+                <h2 class="cardtop"><?php echo $xml->name; ?></h2>
+                <img src=<?php echo $xml->image; ?> class="rounded-circle portrait img-fluid" alt="Pascack Data Services logo" >
+                <h3><?php echo $xml->title; ?></h3>
+                <h4><?php echo $xml->business; ?></h4>
+                <p><?php echo $xml->summary; ?></p>
+              </div>
+              <!-- Footer buttons -->
+              <div align="center" class="card-footer">
+              <a href="<?php echo $xml->website; ?>" target="_blank"><button type="button" class="btn  btn-outline-primary" >Website</button></a>
+              <a href="<?php echo $xml->email; ?> "><button type="button" class="btn  btn-outline-primary" >Contact </button></a> 
+              </div>
             </div>
+  
+ 
   
   <!-- Dave Andrulini -->
             <div class="card">
@@ -281,44 +288,27 @@
       <div class="row row_white">
         <div class="container">
           <div class="card-deck">
-
-  
-  <!-- Sandra Currais -->
-            <div class="card">
-              <?php
-              $xml=simplexml_load_file("members/10.xml") or die ("Error: Cannot read or locate article data");
-              ?>
+         
+          <div class="card">
               <div class="card-body">
-                <h2 class="cardtop"><?php echo $xml->name; ?></h2>
-                <img src=<?php echo $xml->image; ?> class="rounded-circle portrait img-fluid" alt="Pascack Data Services logo" >
-                <h3><?php echo $xml->title; ?></h3>
-                <h4><?php echo $xml->business; ?></h4>
-                <p><?php echo $xml->summary; ?></p>
-              </div>
-              <!-- Footer buttons -->
-              <div align="center" class="card-footer">
-              <a href="<?php echo $xml->website; ?>" target="_blank"><button type="button" class="btn  btn-outline-primary" >Website</button></a>
-              <a href="<?php echo $xml->email; ?> "><button type="button" class="btn  btn-outline-primary" >Contact </button></a> 
-              </div>
+                  <h2 class="cardtop">Ara Khorozian</h2>
+                  <div align="center">
+                  <img src="images/missing.jpg?id=<?php echo $thekeys; ?>"  class="rounded-circle portrait img-fluid" alt="" title="" >
+                  </div>
+                  <h3>Attorney at Law</h3>
+                  <p>
+                  Ara specializes in real estate law, working with clients out of his Oradell, NJ office. </p>
+                </div>
+    
+                <!-- Footer buttons -->
+                <div align="center" class="card-footer">
+                <!-- <button type="button" class="btn  btn-outline-primary" >Website</button> -->
+                <a href="mailto:ara@arakhorozian.com"><button type="button" class="btn  btn-outline-primary">Contact Ara</button></a>
+                </div>
             </div>
-  
-    <!-- Thomas Messina -->
+
             <div class="card">
-              <?php
-              $xml=simplexml_load_file("members/11.xml") or die ("Error: Cannot read or locate article data");
-              ?>
-              <div class="card-body">
-                <h2 class="cardtop"><?php echo $xml->name; ?></h2>
-                <img src=<?php echo $xml->image; ?> class="rounded-circle portrait img-fluid" alt="Pascack Data Services logo" >
-                <h3><?php echo $xml->title; ?></h3>
-                <h4><?php echo $xml->business; ?></h4>
-                <p><?php echo $xml->summary; ?></p>
-              </div>
-              <!-- Footer buttons -->
-              <div align="center" class="card-footer">
-              <a href="<?php echo $xml->website; ?>" target="_blank"><button type="button" class="btn  btn-outline-primary" >Website</button></a>
-              <a href="<?php echo $xml->email; ?> "><button type="button" class="btn  btn-outline-primary" >Contact </button></a> 
-              </div>
+ 
             </div>
 
     <!-- placeholder -->
@@ -340,9 +330,29 @@
               </div>
             </div>
 
+          <div class="card"></div>
+          <!-- placeholder -->
+          <div class="card">
+              <?php
+              $xml=simplexml_load_file("members/XXX.xml") or die ("");
+              ?>
+              <div class="card-body">
+                <h2 class="cardtop"><?php echo $xml->name; ?></h2>
+                <img src=<?php echo $xml->image; ?> class="rounded-circle portrait img-fluid" alt="Pascack Data Services logo" >
+                <h3><?php echo $xml->title; ?></h3>
+                <h4><?php echo $xml->business; ?></h4>
+                <p><?php echo $xml->summary; ?></p>
+              </div>
+              <!-- Footer buttons -->
+              <div align="center" class="card-footer">
+              <a href="<?php echo $xml->website; ?>" target="_blank"><button type="button" class="btn  btn-outline-primary" >Website</button></a>
+              <a href="<?php echo $xml->email; ?> "><button type="button" class="btn  btn-outline-primary" >Contact </button></a> 
+              </div>
+            </div>
+
+          </div>    
           </div>
         </div>
-      </div>
 
     </section>
 
